@@ -7,8 +7,13 @@ function gretasienioTuris(a, b, c) {
 function gretasienioPlotas (a, b, c) {
     return (a*a + b*b + c*c)*2;
 }
+const mathParse = require ("./mathparse");
+const {trikampioPlotas, trikampioPerimetras} = mathParse;
+
 module.exports = {
     kvadratoPlotas,
     gretasienioPlotas,
-    gretasienioTuris
+    gretasienioTuris,
+    trikampioPerimetras,
+    trikampioPlotas,
 }

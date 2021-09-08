@@ -3,7 +3,7 @@ const path = require("path");
 const filename = "document.txt";
 console.log(path.extname(filename));
 
-let a = 5, b = 8, c = 10, d=1;
+let a = 5, b = 8, c = 10, d = 1;
 
 const math = require("./math");
 
@@ -18,3 +18,14 @@ console.log (gretasienioTuris (a, b, c));
 const vidinisGretasienioPlotas = require ("./singlefunction");
 
 console.log (vidinisGretasienioPlotas (a, b, c, d));
+
+//Panaudojant destruktūrizavimą galima iššaukti atskiras funkcijas:
+const mathmore = require("./mathmore");
+const {skritulioPlotas, apskritimoIlgis} = mathmore;
+
+console.log (skritulioPlotas(d));
+console.log (apskritimoIlgis(d));
+
+//Iššaukiamos funkcijos iš trečios bylos (iš mathparse.js per math.js):
+const {trikampioPlotas, trikampioPerimetras} = math;
+console.log (trikampioPlotas(a, b, c));
