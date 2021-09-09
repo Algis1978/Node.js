@@ -1,3 +1,4 @@
+console.log ("KVA_KVA_KVA_KVA_KVA_KVA");
 function kvadratoPlotas (a) {
     return a*a;
 }
